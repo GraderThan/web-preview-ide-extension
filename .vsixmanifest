@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="sandbox" Version="1.0.1" Publisher="jccr"/>
+    <Identity Language="en-US" Id="sandbox" Version="1.0.8" Publisher="jccr"/>
     <DisplayName>Sandbox</DisplayName>
     <Description xml:space="preserve">Instantly test snippets of JS/HTML/CSS using VS Code.</Description>
     <Tags>playground,sandbox,scratchpad,repl,javascript,css</Tags>

@@ -2,7 +2,7 @@
 	"name": "grader-than-web-preview",
 	"displayName": "Grader Than Web Preview",
 	"description": "Instantly test snippets of JS/HTML/CSS using VS Code.",
-	"version": "1.0.0",
+	"version": "1.0.8",
 	"author": {
 		"name": "Grader Than Technology LLC <support@graderthan.com> (https://graderthan.com/)"
 	},
