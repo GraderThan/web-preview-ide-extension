@@ -1,0 +1,84 @@
+{
+	"name": "webpreview",
+	"displayName": "Web Preview",
+	"description": "Instantly test snippets of JS/HTML/CSS using VS Code.",
+	"version": "1.0.0",
+	"author": {
+		"name": "Grader Than Technology LLC <support@graderthan.com> (https://graderthan.com/)"
+	},
+	"license": "MIT",
+	"homepage": "",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"bugs": {
+		"url": ""
+	},
+	"categories": [
+		"Debuggers",
+		"Other"
+	],
+	"keywords": [
+		"playground",
+		"sandbox",
+		"scratchpad",
+		"repl",
+		"javascript"
+	],
+	"publisher": "grader-than",
+	"icon": "assets/icon-256.png",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"activationEvents": [
+		"onFileSystem:sandbox",
+		"onCommand:sandbox.openProject",
+		"onCommand:sandbox.newProject"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		 "viewsContainers": {
+            "activitybar":  "panel"
+		},
+		"commands": [
+			{
+				"title": "New Project",
+				"category": "Web Preview",
+				"command": "sandbox.newProject"
+			},
+			{
+				"title": "Open Project",
+				"category": "Web Preview",
+				"command": "sandbox.openProject"
+			},
+			{
+				"title": "Close Project",
+				"category": "Web Preview",
+				"command": "sandbox.closeProject"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"dependencies": {
+		"jsdom": "15.1.1"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/jsdom": "^12.2.4",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0"
+	}
+}
