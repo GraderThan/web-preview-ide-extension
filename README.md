@@ -1,8 +1,12 @@
 # Web Preview
 
-Experiment with JavaScript, HTML, and CSS directly in your familiar Grader Than IDE! This tool allows you to quickly test and prototype code snippets without any setup.
+Experiment with JavaScript, HTML, and CSS directly in your familiar Grader Than
+IDE! This tool allows you to quickly test and prototype code snippets without
+any setup.
 
-![Sandbox in action](https://github.com/jccr/sandbox-vscode/raw/master/assets/demo.gif)
+This project was forked from [Sandbox-vscode](https://github.com/jccr/sandbox-vscode)
+
+![Sandbox in action](https://github.com/GraderThan/web-preview-ide-extension/raw/master/assets/demo.gif)
 
 ## Key Features
 
