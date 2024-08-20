@@ -29,13 +29,13 @@ jobs:
         run: echo "VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
 
       - name: Package extension
-        run: vsce package -o webpreview-${{ env.VERSION }}.vsix
+        run: vsce package -o web-preview-${{ env.VERSION }}.vsix
 
       - name: Upload VSIX as an artifact
         uses: actions/upload-artifact@v3
         with:
-          name: webpreview-${{ env.VERSION }}.vsix
-          path: ./webpreview-${{ env.VERSION }}.vsix
+          name: web-preview-${{ env.VERSION }}.vsix
+          path: ./web-preview-${{ env.VERSION }}.vsix
 
   release:
     needs: build
@@ -45,11 +45,11 @@ jobs:
       - name: Download VSIX package
         uses: actions/download-artifact@v3
         with:
-          name: webpreview-${{ env.VERSION }}.vsix
+          name: web-preview-${{ env.VERSION }}.vsix
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v1
         with:
-          files: webpreview-${{ env.VERSION }}.vsix
+          files: web-preview-${{ env.VERSION }}.vsix
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
