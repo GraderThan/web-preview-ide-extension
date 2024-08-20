@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "configuration files",
-        "source"
+        "source",
+        "github action"
     ]
 }
