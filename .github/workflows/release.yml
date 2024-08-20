@@ -38,6 +38,7 @@ jobs:
           path: ./web-preview-${{ env.VERSION }}.vsix
 
   release:
+    permissions: write-all # Required to create a release
     needs: build
     runs-on: ubuntu-latest
 
