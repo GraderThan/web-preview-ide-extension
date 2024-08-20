@@ -6,7 +6,7 @@ any setup.
 
 This project was forked from [Sandbox-vscode](https://github.com/jccr/sandbox-vscode)
 
-![Sandbox in action](https://github.com/GraderThan/web-preview-ide-extension/raw/master/assets/demo.gif)
+![Sandbox in action](https://github.com/GraderThan/web-preview-ide-extension/raw/main/assets/demo.gif)
 
 ## Key Features
 
